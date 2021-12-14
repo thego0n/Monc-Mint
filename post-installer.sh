@@ -37,7 +37,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ######
 
 sudo apt install zsh
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
@@ -49,4 +49,5 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 #######
 # Desktop Setup
 #######
-./desktop_backup
+sudo chmod +x .desktop_backup.sh
+./desktop_backup.sh
