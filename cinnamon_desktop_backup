@@ -20,15 +20,15 @@ desktop-effects-tile-transition='easeInQuad'
 desktop-effects-unmaximize-effect='scale'
 desktop-effects-unmaximize-time=100
 desktop-effects-unmaximize-transition='easeNone'
-enabled-applets=['panel1:center:0:menu@cinnamon.org:14', 'panel1:center:1:grouped-window-list@cinnamon.org:16', 'panel1:right:2:systray@cinnamon.org:17', 'panel1:right:4:xapp-status@cinnamon.org:18', 'panel1:left:0:notifications@cinnamon.org:19', 'panel1:right:5:printers@cinnamon.org:20', 'panel1:right:6:removable-drives@cinnamon.org:21', 'panel1:right:7:keyboard@cinnamon.org:22', 'panel1:right:3:favorites@cinnamon.org:23', 'panel1:right:9:network@cinnamon.org:24', 'panel1:right:10:sound@cinnamon.org:25', 'panel1:right:11:power@cinnamon.org:26', 'panel1:left:2:calendar@cinnamon.org:27', 'panel1:right:0:expo@cinnamon.org:28', 'panel1:right:1:scale@cinnamon.org:29', 'panel1:left:1:user@cinnamon.org:30', 'panel1:left:3:weather@mockturtl:31']
+enabled-applets=['panel1:center:0:menu@cinnamon.org:14', 'panel1:center:1:grouped-window-list@cinnamon.org:16', 'panel1:right:2:systray@cinnamon.org:17', 'panel1:right:4:xapp-status@cinnamon.org:18', 'panel1:left:0:notifications@cinnamon.org:19', 'panel1:right:5:printers@cinnamon.org:20', 'panel1:right:6:removable-drives@cinnamon.org:21', 'panel1:right:7:keyboard@cinnamon.org:22', 'panel1:right:3:favorites@cinnamon.org:23', 'panel1:right:8:network@cinnamon.org:24', 'panel1:right:9:sound@cinnamon.org:25', 'panel1:right:12:power@cinnamon.org:26', 'panel1:left:1:calendar@cinnamon.org:27', 'panel1:right:0:expo@cinnamon.org:28', 'panel1:right:1:scale@cinnamon.org:29', 'panel1:left:2:weather@mockturtl:31']
 enabled-extensions=['blur-overview@nailfarmer.nailfarmer.com', 'transparent-panels@germanfr']
 hotcorner-layout=['desktop:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
 next-applet-id=32
 panel-edit-mode=false
-panel-zone-icon-sizes='[{"panelId": 1, "left": 16, "center": 32, "right": 16}]'
-panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 16, "center": 32, "right": 15}]'
+panel-zone-icon-sizes='[{"panelId": 1, "left": 16, "center": 0, "right": 16}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 16, "center": 26, "right": 15}]'
 panels-enabled=['1:0:bottom']
-panels-height=['1:42']
+panels-height=['1:38']
 
 [desktop/a11y/applications]
 screen-keyboard-enabled=false
@@ -41,13 +41,19 @@ dwell-time=1.2
 secondary-click-enabled=false
 secondary-click-time=1.2
 
+[desktop/applications/calculator]
+exec='gnome-calculator'
+
+[desktop/applications/terminal]
+exec='gnome-terminal'
+
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/linuxmint-ulyssa/fbellanger_roscoff.jpg'
+picture-uri='file:///usr/share/backgrounds/linuxmint-uma/oram_blue_moon.jpg'
 
 [desktop/background/slideshow]
 delay=15
-image-source='xml:///usr/share/cinnamon-background-properties/linuxmint-ulyssa.xml'
+image-source='xml:///usr/share/cinnamon-background-properties/linuxmint-uma.xml'
 
 [desktop/interface]
 clock-show-date=true
@@ -55,15 +61,25 @@ clock-use-24h=false
 cursor-blink-time=1200
 cursor-size=25
 cursor-theme='Vimix-white-cursors'
+font-name='Ubuntu Medium 10'
 gtk-theme='Orchis-grey-dark'
 icon-theme='Tela'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
 toolkit-accessibility=false
 
+[desktop/keybindings]
+looking-glass-keybinding=['<Alt><Super>l']
+
+[desktop/keybindings/media-keys]
+screensaver=['<Super>l', 'XF86ScreenSaver']
+
 [desktop/keybindings/wm]
 push-tile-up=@as []
 toggle-maximized=['<Super>Up']
+
+[desktop/media-handling]
+autorun-never=false
 
 [desktop/screensaver]
 default-message=''
@@ -73,9 +89,11 @@ idle-delay=uint32 0
 
 [desktop/sound]
 event-sounds=false
+volume-sound-enabled=false
 
 [desktop/wm/preferences]
 theme='Orchis-grey-dark-compact'
+titlebar-font='Ubuntu Medium 10'
 
 [settings-daemon/peripherals/keyboard]
 delay=uint32 500
@@ -102,6 +120,14 @@ sleep-inactive-battery-timeout=0
 
 [settings-daemon/plugins/xsettings]
 buttons-have-icons=true
+
+[sounds]
+logout-enabled=true
+notification-enabled=false
+plug-enabled=false
+switch-enabled=false
+tile-enabled=false
+unplug-enabled=false
 
 [theme]
 name='Orchis-grey-dark'
