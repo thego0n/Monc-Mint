@@ -1,5 +1,5 @@
 #!/bin/sh
-
+cd "$(dirname "$0")"
 echo "-------------------------------------"
 echo "--          Desktop Setup          --"
 echo "-------------------------------------"
@@ -32,8 +32,9 @@ sudo chmod +x install.sh
 #####
 # Load Desktop Settings
 #####
+#FIXME:
 dconf load /org/cinnamon/ < cinnamon_desktop_backup
 
 # Remove folders
-rm -r /Orchis-theme/ -y
-rm -r /Tela-icon-theme/ -y
+sudo rm -r /Orchis-theme/ -y
+sudo rm -r /Tela-icon-theme/ -y
