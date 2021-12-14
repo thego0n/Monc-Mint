@@ -72,20 +72,13 @@ sleep 3s
 echo "All Packages Installed"
 sleep 1s
 ######
-# ZSH Setup
+# Oh My Bash Setup
 ######
-echo "Installing zsh terminal"
+echo "Installing Oh-My-bash (Terminal Themes)"
 
-sudo apt install zsh
-sudo chsh -s $(which zsh)
-
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-
-cp .zshrc ~/.zshrc
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-echo "zsh terminal installed with all themes from 'Oh-My-Zsh!'"
-
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+cp .bashrc ~/.bashrc
+echo "Oh-My-Bash in stalled!!!"
 
 sleep 2s
 
