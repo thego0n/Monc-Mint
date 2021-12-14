@@ -49,5 +49,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 #######
 # Desktop Setup
 #######
+#FIXME:
 sudo chmod +x .desktop_backup.sh
 ./desktop_backup.sh
