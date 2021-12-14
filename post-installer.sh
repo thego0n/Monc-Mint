@@ -49,7 +49,7 @@ done
 
 # Snap Install
 SNAP_PKGS="teams"
-CLASSIC_SNAP_PKGS="android-studio discord"
+CLASSIC_SNAP_PKGS="android-studio discord code"
 
 for i in $SNAP_PKGS; do
     sudo snap install $i
@@ -81,6 +81,15 @@ cp .bashrc ~/.bashrc
 echo "Oh-My-Bash in stalled!!!"
 
 sleep 2s
+
+echo "Installing miniconda"
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+
+echo "Installed Miniconda"
 
 
 #######
