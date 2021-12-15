@@ -75,7 +75,7 @@ cursor-size=25
 cursor-theme='Vimix-white-cursors'
 font-name='Ubuntu Medium 10'
 gtk-theme='Mint-Y-Dark-Grey'
-icon-theme='Tela'
+icon-theme='Tela-black'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
 toolkit-accessibility=false
@@ -142,7 +142,7 @@ tile-enabled=false
 unplug-enabled=false
 
 [org/cinnamon/theme]
-name='Orchis-dark'
+name='Orchis-dark-compact'
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
@@ -165,9 +165,28 @@ disable-microphone=false
 migrated=true
 network-monitor-gio-name=''
 
+[org/gnome/nm-applet/eap/b9c41bcb-f7f9-4fd2-a04c-a66a30568725]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,0,0)'
+background-transparency-percent=6
+bold-is-bright=true
+foreground-color='rgb(255,255,255)'
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+
 [org/nemo/desktop]
 computer-icon-visible=false
 home-icon-visible=false
+
+[org/nemo/window-state]
+geometry='800x550+273+88'
+maximized=false
+sidebar-bookmark-breakpoint=5
+start-with-sidebar=true
 
 [org/x/editor/plugins]
 active-plugins=['joinlines', 'open-uri-context-menu', 'textsize', 'spell', 'docinfo', 'time', 'sort', 'bracketcompletion', 'modelines', 'filebrowser']
