@@ -1,5 +1,4 @@
 #!/bin/sh
-cd "$(dirname "$0")"
 echo "-------------------------------------"
 echo "--          Desktop Setup          --"
 echo "-------------------------------------"
@@ -9,7 +8,7 @@ sleep 2s
 #####
 
 echo "Installing Orchis Theme"
-git clone git@github.com:vinceliuice/Orchis-theme.git
+git clone https://github.com/vinceliuice/Orchis-theme.git
 
 cd Orchis-theme
 sudo chmod +x install.sh
@@ -22,7 +21,7 @@ sleep 2s
 # Install Tela Icons
 #####
 echo
-git clone git@github.com:vinceliuice/Tela-icon-theme.git
+git clone https://github.com/vinceliuice/Tela-icon-theme.git
 cd Tela-icon-theme
 
 sudo chmod +x install.sh
@@ -33,7 +32,7 @@ sudo chmod +x install.sh
 # Load Desktop Settings
 #####
 #FIXME:
-dconf load /org/cinnamon/ < cinnamon_desktop_backup
+dconf load /org/cinnamon/ < dconf_dump.txt
 
 # Remove folders
 sudo rm -r /Orchis-theme/ -y

@@ -1,4 +1,16 @@
-[/]
+[com/linuxmint/install]
+flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
+installed-apps=['apt:default-jdk', 'apt:filezilla', 'apt:gimp', 'apt:git', 'apt:google-chrome-stable', 'apt:sassc', 'apt:snapd']
+
+[com/linuxmint/updates]
+install-last-run=1639559711
+refresh-last-run=1639561496
+show-welcome-page=false
+window-height=570
+window-pane-position=344
+window-width=790
+
+[org/cinnamon]
 app-menu-label=''
 command-history=['r']
 desktop-effects-close-effect='traditional'
@@ -30,86 +42,86 @@ panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 16, "center": 26, "right
 panels-enabled=['1:0:bottom']
 panels-height=['1:38']
 
-[desktop/a11y/applications]
+[org/cinnamon/desktop/a11y/applications]
 screen-keyboard-enabled=false
 screen-reader-enabled=false
 
-[desktop/a11y/mouse]
+[org/cinnamon/desktop/a11y/mouse]
 dwell-click-enabled=false
 dwell-threshold=10
 dwell-time=1.2
 secondary-click-enabled=false
 secondary-click-time=1.2
 
-[desktop/applications/calculator]
+[org/cinnamon/desktop/applications/calculator]
 exec='gnome-calculator'
 
-[desktop/applications/terminal]
+[org/cinnamon/desktop/applications/terminal]
 exec='gnome-terminal'
 
-[desktop/background]
+[org/cinnamon/desktop/background]
 picture-options='zoom'
 picture-uri='file:///usr/share/backgrounds/linuxmint-uma/oram_blue_moon.jpg'
 
-[desktop/background/slideshow]
+[org/cinnamon/desktop/background/slideshow]
 delay=15
 image-source='xml:///usr/share/cinnamon-background-properties/linuxmint-uma.xml'
 
-[desktop/interface]
+[org/cinnamon/desktop/interface]
 clock-show-date=true
 clock-use-24h=false
 cursor-blink-time=1200
 cursor-size=25
 cursor-theme='Vimix-white-cursors'
 font-name='Ubuntu Medium 10'
-gtk-theme='Orchis-grey-dark'
+gtk-theme='Mint-Y-Dark-Grey'
 icon-theme='Tela'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
 toolkit-accessibility=false
 
-[desktop/keybindings]
+[org/cinnamon/desktop/keybindings]
 looking-glass-keybinding=['<Alt><Super>l']
 
-[desktop/keybindings/media-keys]
+[org/cinnamon/desktop/keybindings/media-keys]
 screensaver=['<Super>l', 'XF86ScreenSaver']
 
-[desktop/keybindings/wm]
+[org/cinnamon/desktop/keybindings/wm]
 push-tile-up=@as []
 toggle-maximized=['<Super>Up']
 
-[desktop/media-handling]
+[org/cinnamon/desktop/media-handling]
 autorun-never=false
 
-[desktop/screensaver]
+[org/cinnamon/desktop/screensaver]
 default-message=''
 
-[desktop/session]
+[org/cinnamon/desktop/session]
 idle-delay=uint32 0
 
-[desktop/sound]
+[org/cinnamon/desktop/sound]
 event-sounds=false
 volume-sound-enabled=false
 
-[desktop/wm/preferences]
-theme='Orchis-grey-dark-compact'
+[org/cinnamon/desktop/wm/preferences]
+theme='Mint-Y-Dark'
 titlebar-font='Ubuntu Medium 10'
 
-[settings-daemon/peripherals/keyboard]
+[org/cinnamon/settings-daemon/peripherals/keyboard]
 delay=uint32 500
 numlock-state='off'
 repeat-interval=uint32 30
 
-[settings-daemon/peripherals/mouse]
+[org/cinnamon/settings-daemon/peripherals/mouse]
 custom-threshold=true
 double-click=400
 drag-threshold=8
 motion-threshold=5
 
-[settings-daemon/peripherals/touchpad]
+[org/cinnamon/settings-daemon/peripherals/touchpad]
 motion-threshold=1
 
-[settings-daemon/plugins/power]
+[org/cinnamon/settings-daemon/plugins/power]
 critical-battery-action='nothing'
 lid-close-ac-action='blank'
 lid-close-battery-action='blank'
@@ -118,10 +130,10 @@ sleep-display-battery=0
 sleep-inactive-ac-timeout=0
 sleep-inactive-battery-timeout=0
 
-[settings-daemon/plugins/xsettings]
+[org/cinnamon/settings-daemon/plugins/xsettings]
 buttons-have-icons=true
 
-[sounds]
+[org/cinnamon/sounds]
 logout-enabled=true
 notification-enabled=false
 plug-enabled=false
@@ -129,5 +141,48 @@ switch-enabled=false
 tile-enabled=false
 unplug-enabled=false
 
-[theme]
-name='Orchis-grey-dark'
+[org/cinnamon/theme]
+name='Orchis-dark'
+
+[org/gnome/desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[org/gnome/desktop/a11y/mouse]
+dwell-click-enabled=false
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-enabled=false
+secondary-click-time=1.2
+
+[org/gnome/desktop/interface]
+toolkit-accessibility=false
+
+[org/gnome/desktop/privacy]
+disable-microphone=false
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/nemo/desktop]
+computer-icon-visible=false
+home-icon-visible=false
+
+[org/x/editor/plugins]
+active-plugins=['joinlines', 'open-uri-context-menu', 'textsize', 'spell', 'docinfo', 'time', 'sort', 'bracketcompletion', 'modelines', 'filebrowser']
+
+[org/x/editor/plugins/filebrowser/on-load]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/ciaran/Downloads'
+
+[org/x/editor/preferences/ui]
+statusbar-visible=true
+
+[org/x/editor/state/window]
+bottom-panel-size=140
+side-panel-active-page=827629879
+side-panel-size=200
+size=(650, 500)
+state=43908
