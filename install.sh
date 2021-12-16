@@ -57,7 +57,7 @@ sleep 2s
 ###########
 
 # Apt Install
-APT_PKGS="gimp steam filezilla default-jdk google-chrome-stable thunderbird fonts-powerline"
+APT_PKGS="gimp steam filezilla default-jdk mariadb-server google-chrome-stable thunderbird fonts-powerline"
 for i in $APT_PKGS; do
   apt-get install -y $i
 done
