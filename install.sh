@@ -57,7 +57,7 @@ sleep 2s
 ###########
 
 # Apt Install
-APT_PKGS="gimp filezilla default-jdk google-chrome-stable thunderbird fonts-powerline"
+APT_PKGS="gimp steam filezilla default-jdk google-chrome-stable thunderbird fonts-powerline"
 for i in $APT_PKGS; do
   apt-get install -y $i
 done
@@ -103,6 +103,9 @@ rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash
 
 echo "Installed Miniconda"
+
+apt update
+apt upgrade
 
 #######
 # Desktop Setup
