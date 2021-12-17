@@ -34,6 +34,11 @@ sudo ./install.sh
 Script will begin by asking for your name and email address. This is just for the purpose of configuring your git username and email. Trust me I'm not stealing your details!! :laughing:
 
 ## Planned Features
+Choice of music streaming services(YouTube Music, Spotify)
+Choice of Mac/Windows style layout
+
+
+
 
 
 ## Contributing
