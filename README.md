@@ -20,11 +20,20 @@ sudo apt install git -y
 
 Clone the project using
 ```bash
-git clone 
+git clone https://github.com/monc949/Monc-Mint.git
+```
+Then navigate into the Monc-Mint directory.
+And run the install file as sudo.
+
+```bash
+cd Monc-Mint
+sudo ./install.sh
 ```
 
+## Note
+Script will begin by asking for your name and email address. This is just for the purpose of configuring your git username and email. Trust me I'm not stealing your details!! :laughing:
 
-## Usage
+## Planned Features
 
 
 ## Contributing
