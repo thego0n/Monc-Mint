@@ -2,12 +2,12 @@
 
 
 echo "-------------------------------------"
-echo "--     Monc's Automated Setup      --"
+echo "--          Monc-Mint              --"
 echo "-------------------------------------"
 sleep 2s
 
 echo "-------------------------------------"
-echo "--        Git Configuration        --"
+echo "--       Git Configuration         --"
 echo "-------------------------------------"
 
 echo "What is your name : "
@@ -23,7 +23,7 @@ sleep 1s
 
 
 echo "-------------------------------------"
-echo "--          System Setup           --"
+echo "--         System Setup            --"
 echo "-------------------------------------"
 
 ###############
@@ -101,7 +101,7 @@ echo "Installing Oh-My-bash (Terminal Themes)"
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 rm ~/.bashrc
-cp ~/mint_setup/files/.bashrc ~/.bashrc
+cp ~/Monc-Mint/files/.bashrc ~/.bashrc
 echo "Oh-My-Bash installed!!!"
 
 sleep 2s
