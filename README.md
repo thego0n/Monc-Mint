@@ -12,17 +12,17 @@ Obtain an ISO from [Linuxmint.com](https://linuxmint.com/download.php), install 
 
 Follow the Mint installation process as normal.
 
-Install git on the fresh system using
+1. Install git on the fresh system using
 
 ```bash
 sudo apt install git -y
 ```
 
-Clone the project using
+2. Clone the project using
 ```bash
 git clone https://github.com/monc949/Monc-Mint.git
 ```
-Then navigate into the Monc-Mint directory.
+3. Then navigate into the Monc-Mint directory.
 And run the install file as sudo.
 
 ```bash
@@ -31,11 +31,13 @@ sudo ./install.sh
 ```
 
 ## Note
-Script will begin by asking for your name and email address. This is just for the purpose of configuring your git username and email. Trust me I'm not stealing your details!! :laughing:
+The script will begin by asking for your name and email address. This is just for the purpose of configuring your git username and email. Trust me I'm not stealing your details!! :laughing:
 
 ## Planned Features
+Expanded git setup with Auto upload of ssh keys to git account
 Choice of music streaming services(YouTube Music, Spotify)
 Choice of Mac/Windows style layout
+
 
 
 
