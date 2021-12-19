@@ -8,7 +8,7 @@ This project is still in development and testing. While every care is being take
 
 ## Installation
 
-Obtain an ISO from [Linuxmint.com](https://linuxmint.com/download.php), install it on a usb with [baleneEtcher](https://www.balena.io/etcher/) or [UNetbootin](https://unetbootin.github.io/) or install it on a [Ventoy](https://www.ventoy.net/en/doc_start.html) based USB.
+Obtain an ISO from [Linuxmint.com](https://linuxmint.com/download.php), install it on a usb with [balenaEtcher](https://www.balena.io/etcher/) or [UNetbootin](https://unetbootin.github.io/) or install it on a [Ventoy](https://www.ventoy.net/en/doc_start.html) based USB.
 
 Follow the Mint installation process as normal.
 
