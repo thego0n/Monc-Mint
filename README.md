@@ -31,7 +31,7 @@ sudo ./install.sh
 ```
 
 ## Note
-The script will begin by asking for your name and email address. This is just for the purpose of configuring your git username and email. Trust me I'm not stealing your details!! :laughing:
+The script will begin by asking for your name and email address. This is just for configuring your git username and email. Trust me I'm not stealing your details!! :laughing:
 
 ## Planned Features
 Expanded git setup with Auto upload of ssh keys to git account
