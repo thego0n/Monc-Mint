@@ -34,7 +34,6 @@ sudo ./install.sh
 The script will begin by asking for your name and email address. This is just for configuring your git username and email. Trust me I'm not stealing your details!! :laughing:
 
 ## Planned Features
-* Expanded git setup with Auto upload of ssh keys to git account
 * Choice of music streaming services(YouTube Music, Spotify)
 * Choice of Mac/Windows style layout
 
