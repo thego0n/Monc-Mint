@@ -87,7 +87,9 @@ done
 
 
 # Snap Install
-SNAP_PKGS="android-studio discord code teams"
+SNAP_PKGS="android-studio discord code teams zoom-client"
+
+
 
 if [$service = "S"] || [$service = "s"]
 then

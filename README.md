@@ -36,7 +36,6 @@ The script will begin by asking for your name and email address. This is just fo
 
 ## Planned Features
 
-- Choice of music streaming services(YouTube Music, Spotify) `:white_check_mark:`
 - Choice of Mac/Windows style layout
 
 ## Contributing
