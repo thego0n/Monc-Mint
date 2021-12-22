@@ -27,8 +27,7 @@ echo "--    Streaming Service Setup      --"
 echo "-------------------------------------"
 
 echo "Type 'S' for Spotify or 'Y' for Youtube Music"
-read service 
-service = ${service^}
+read service
 
 
 echo "-------------------------------------"
@@ -90,13 +89,16 @@ done
 # Snap Install
 SNAP_PKGS="android-studio discord code teams"
 
-if [service = S]
+if [$service = "S"] || [$service = "s"]
 then
   SNAP_PKGS+= " spotify"
 fi
-if [service = Y]
+
+if [$service = "Y"] || [$service = "y"]
 then
   SNAP_PKGS+= " youtube-music-desktop-app"
+fi
+
 for i in $SNAP_PKGS; do
     snap install $i --classic
 done
@@ -138,4 +140,4 @@ apt upgrade
 #######
 echo "Setting up Desktop Environment"
 chmod +x desktop_setup.sh
-sh ./desktop_setup.sh
+./desktop_setup.sh
