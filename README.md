@@ -30,9 +30,9 @@ cd Monc-Mint
 sudo ./install.sh
 ```
 
-## Note
+## Install.sh
 
-The script will begin by asking for your name and email address. This is just for configuring your git username and email. Trust me I'm not stealing your details!! 😆
+The script will begin by asking for your name and email address. This is just for configuring your git username and email. It then asks for your preference on various software packages.
 
 ## Planned Features
 
