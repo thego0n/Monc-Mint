@@ -21,7 +21,7 @@ git config --global user.email $email
 echo "Git settings configured!!"
 sleep 1s
 
-
+clear
 echo "-------------------------------------"
 echo "--    Streaming Service Setup      --"
 echo "-------------------------------------"
@@ -29,7 +29,7 @@ echo "-------------------------------------"
 echo "Type 'S' for Spotify or 'Y' for Youtube Music"
 read service
 
-
+clear
 echo "-------------------------------------"
 echo "--         System Setup            --"
 echo "-------------------------------------"
