@@ -33,7 +33,7 @@ cd ..
 #####
 # Load Desktop Settings
 #####
-dconf load /org/cinnamon/ < dconf_dump.txt
+dconf load / < dconf_dump.txt
 
 sudo rm -r Orchis-theme/
 
