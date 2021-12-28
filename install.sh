@@ -71,7 +71,7 @@ for i in $APT_PKGS; do
   apt-get install -y $i
 done
 
-APT_DRIVERS = "adb"
+APT_DRIVERS="adb"
 for i in $APT_DRIVERS; do
   apt-get install -y $i
 done
