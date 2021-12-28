@@ -121,7 +121,7 @@ echo "Installing Oh-My-bash (Terminal Themes)"
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 rm ~/.bashrc
-cp ~/Monc-Mint/files/.bashrc ~/.bashrc
+cp ~/Monc-Mint/.bashrc ~/.bashrc
 echo "Oh-My-Bash installed!!!"
 
 sleep 2s
