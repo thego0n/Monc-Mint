@@ -35,6 +35,7 @@ cd ..
 dconf load / < dconf_dump.txt
 
 sudo rm -r Orchis-theme/
+sudo rm -r Tela-icon-theme/
 
 echo "######################"
 echo "######################"
