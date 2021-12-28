@@ -105,14 +105,6 @@ cp  /home/$(logname)/Monc-Mint/.bashrc /home/$(logname)/.bashrc
 echo "Oh-My-Bash installed!!!"
 sleep 2s
 
-echo "Installing miniconda"
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /home/$(logname)/miniconda3/miniconda.sh
-bash /home/$(logname)/miniconda3/miniconda.sh -b -u -p /home/$(logname)/miniconda3
-rm -rf /home/$(logname)/miniconda3/miniconda.sh
-/home/$(logname)/miniconda3/bin/conda init bash
-
-echo "Installed Miniconda"
-
 apt update
 apt upgrade
 
