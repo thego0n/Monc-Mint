@@ -15,8 +15,8 @@ read name
 echo "What is your email address : "
 read email
 
-git config --global (logname).name $name
-git config --global (logname).email $email
+git config --global user.name $name
+git config --global user.email $email
 
 echo "Git settings configured!!"
 sleep 1s
