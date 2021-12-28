@@ -27,7 +27,7 @@ cd Tela-icon-theme
 
 chmod +x install.sh
 ./install.sh
-
+cd ..
 
 #####
 # Load Desktop Settings
