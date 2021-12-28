@@ -80,7 +80,7 @@ for i in $APT_PKGS; do
 done
 
 APT_DRIVERS = "adb"
-for i in $APT_PKGS; do
+for i in $APT_DRIVERS; do
   apt-get install -y $i
 done
 
@@ -121,7 +121,7 @@ echo "Installing Oh-My-bash (Terminal Themes)"
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 cd
-rm ~/.bashrc
+rm .bashrc
 cd
 cp  /Monc-Mint/.bashrc ~/.bashrc
 echo "Oh-My-Bash installed!!!"
@@ -143,5 +143,5 @@ apt upgrade
 # Desktop Setup
 #######
 echo "Setting up Desktop Environment"
-chmod +x desktop_setup.sh
+chmod +x theme_install.sh
 ./theme_install.sh

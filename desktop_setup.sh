@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 dconf load /org/cinnamon/ < desktop_conf.txt
 clear
