@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dconf load /org/cinnamon/ < desktop_conf.txt
+dconf load / < desktop_conf.txt
 
 echo "######################"
 echo "######################"
