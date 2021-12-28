@@ -23,14 +23,6 @@ sleep 1s
 
 clear
 echo "-------------------------------------"
-echo "--    Streaming Service Setup      --"
-echo "-------------------------------------"
-
-echo "Type 'S' for Spotify or 'Y' for Youtube Music"
-read service
-
-clear
-echo "-------------------------------------"
 echo "--         System Setup            --"
 echo "-------------------------------------"
 
@@ -87,19 +79,7 @@ done
 
 
 # Snap Install
-SNAP_PKGS="android-studio discord code teams zoom-client"
-
-
-
-if [$service = "S"] || [$service = "s"]
-then
-  SNAP_PKGS+= " spotify"
-fi
-
-if [$service = "Y"] || [$service = "y"]
-then
-  SNAP_PKGS+= " youtube-music-desktop-app"
-fi
+SNAP_PKGS="android-studio discord code teams zoom-client spotify youtube-music-desktop-app"
 
 for i in $SNAP_PKGS; do
     snap install $i --classic
@@ -120,16 +100,16 @@ sleep 1s
 echo "Installing Oh-My-bash (Terminal Themes)"
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-rm ~/.bashrc
-cp  ~/Monc-Mint/.bashrc ~/.bashrc
+rm  $HOME/.bashrc
+cp  $HOME/Monc-Mint/.bashrc $HOME/.bashrc
 echo "Oh-My-Bash installed!!!"
 sleep 2s
 
 echo "Installing miniconda"
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-rm -rf ~/miniconda3/miniconda.sh
-~/miniconda3/bin/conda init bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O $HOME/miniconda3/miniconda.sh
+bash $HOME/miniconda3/miniconda.sh -b -u -p $HOME/miniconda3
+rm -rf $HOME/miniconda3/miniconda.sh
+$HOME/miniconda3/bin/conda init bash
 
 echo "Installed Miniconda"
 
