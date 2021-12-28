@@ -3,12 +3,24 @@ flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
 installed-apps=['apt:default-jdk', 'apt:filezilla', 'apt:gimp', 'apt:git', 'apt:google-chrome-stable', 'apt:sassc', 'apt:snapd']
 
 [com/linuxmint/updates]
-install-last-run=1640185907
-refresh-last-run=1640191439
+install-last-run=1640638712
+refresh-last-run=1640688929
 show-welcome-page=false
 window-height=570
 window-pane-position=280
 window-width=790
+
+[io/github/celluloid-player/celluloid]
+settings-migrated=true
+
+[io/github/celluloid-player/celluloid/window-state]
+height=605
+loop-playlist=false
+maximized=false
+playlist-width=250
+show-playlist=false
+volume=1.0
+width=1024
 
 [org/cinnamon]
 app-menu-label=''
@@ -371,6 +383,24 @@ sidebar-width=200
 window-height=480
 window-width=600
 
+[org/gnome/gedit/plugins]
+active-plugins=['spell', 'docinfo', 'time', 'modelines', 'filebrowser']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/ciaran/Work/Personal/Monc-Mint/files'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(900, 683)
+state=87168
+
 [org/gnome/nm-applet/eap/21c422d2-b3e6-49af-8f1a-046d055a98a3]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -409,6 +439,9 @@ window-size=(1124, 706)
 computer-icon-visible=false
 home-icon-visible=false
 
+[org/nemo/preferences]
+show-hidden-files=true
+
 [org/nemo/window-state]
 geometry='800x550+273+88'
 maximized=false
@@ -424,7 +457,7 @@ active-plugins=['joinlines', 'open-uri-context-menu', 'textsize', 'spell', 'doci
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/ciaran/Downloads'
+virtual-root='file:///home/ciaran/Downloads/cinnamon-orchis/conky-startup-script'
 
 [org/x/editor/preferences/ui]
 statusbar-visible=true
