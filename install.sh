@@ -142,4 +142,4 @@ apt upgrade
 #######
 echo "Setting up Desktop Environment"
 chmod +x desktop_setup.sh
-./desktop_setup.sh
+./theme_install.sh
