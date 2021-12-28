@@ -4,7 +4,7 @@ installed-apps=['apt:default-jdk', 'apt:filezilla', 'apt:gimp', 'apt:git', 'apt:
 
 [com/linuxmint/updates]
 install-last-run=1640638712
-refresh-last-run=1640688929
+refresh-last-run=1640696132
 show-welcome-page=false
 window-height=570
 window-pane-position=280
