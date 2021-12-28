@@ -99,17 +99,17 @@ sleep 1s
 ######
 echo "Installing Oh-My-bash (Terminal Themes)"
 
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-rm  $HOME/.bashrc
-cp  $HOME/Monc-Mint/.bashrc $HOME/.bashrc
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+sudo rm  ~/.bashrc
+sudo cp  ~/Monc-Mint/.bashrc ~/.bashrc
 echo "Oh-My-Bash installed!!!"
 sleep 2s
 
 echo "Installing miniconda"
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O $HOME/miniconda3/miniconda.sh
-bash $HOME/miniconda3/miniconda.sh -b -u -p $HOME/miniconda3
-rm -rf $HOME/miniconda3/miniconda.sh
-$HOME/miniconda3/bin/conda init bash
+sudo wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+sudo bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+sudo rm -rf ~/miniconda3/miniconda.sh
+sudo ~/miniconda3/bin/conda init bash
 
 echo "Installed Miniconda"
 
