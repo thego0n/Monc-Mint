@@ -15,6 +15,7 @@ chmod +x install.sh
 ./install.sh
 
 echo "Orchis Theme Installed"
+cd ..
 sleep 2s
 
 #####
@@ -26,12 +27,13 @@ cd Tela-icon-theme
 
 chmod +x install.sh
 ./install.sh
+cd ..
 
 
 #####
 # Load Desktop Settings
 #####
-dconf load /org/cinnamon/ < ~/Monc-Mint/files/dconf_dump.txt
+dconf load /org/cinnamon/ < dconf_dump.txt
 
 sudo rm -r Orchis-theme/
 
