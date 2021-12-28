@@ -32,7 +32,7 @@ chmod +x install.sh
 # Load Desktop Settings
 #####
 cd
-cd Monc-Mint
+cd /Monc-Mint/
 dconf load /org/cinnamon/ < files/dconf_dump.txt
 
 sudo rm -r Orchis-theme/
