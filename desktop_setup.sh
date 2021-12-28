@@ -27,13 +27,12 @@ cd Tela-icon-theme
 
 chmod +x install.sh
 ./install.sh
-cd ..
 
 
 #####
 # Load Desktop Settings
 #####
-sudo dconf load / < dconf_dump.txt
+dconf load / < dconf_dump.txt
 
 sudo rm -r Orchis-theme/
 
