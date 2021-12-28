@@ -23,7 +23,7 @@ git clone https://github.com/monc949/Monc-Mint.git
 ```
 
 3. Then navigate into the Monc-Mint directory.
-   And run the install file as sudo.
+   And run the install file as sudo. **\*\*** This is very important
 
 ```bash
 cd Monc-Mint
@@ -32,7 +32,7 @@ sudo ./install.sh
 
 ## Install.sh
 
-The script will begin by asking for your name and email address. This is just for configuring your git username and email. It then asks for your preference on various software packages.
+The script will begin by asking for your name and email address. This is just for configuring your git username and email.
 
 ## Note
 
