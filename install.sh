@@ -35,7 +35,7 @@ rm /etc/apt/preferences.d/nosnap.pref &> /dev/null
 
 #### Add google chrome repo
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub |  apt-key add - &> /dev/null
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+ sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
 #### Update sources
 apt update -y
@@ -99,17 +99,17 @@ sleep 1s
 ######
 echo "Installing Oh-My-bash (Terminal Themes)"
 
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-sudo rm  ~/.bashrc
-sudo cp  ~/Monc-Mint/.bashrc ~/.bashrc
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+rm  /home/$USER/.bashrc
+cp  /home/$USER/Monc-Mint/.bashrc /home/$USER/.bashrc
 echo "Oh-My-Bash installed!!!"
 sleep 2s
 
 echo "Installing miniconda"
-sudo wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-sudo bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-sudo rm -rf ~/miniconda3/miniconda.sh
-sudo ~/miniconda3/bin/conda init bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /home/$USER/miniconda3/miniconda.sh
+bash /home/$USER/miniconda3/miniconda.sh -b -u -p /home/$USER/miniconda3
+rm -rf /home/$USER/miniconda3/miniconda.sh
+/home/$USER/miniconda3/bin/conda init bash
 
 echo "Installed Miniconda"
 
