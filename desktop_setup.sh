@@ -33,7 +33,7 @@ cd ..
 #####
 # Load Desktop Settings
 #####
-dconf load / < dconf_dump.txt
+sudo dconf load / < dconf_dump.txt
 
 sudo rm -r Orchis-theme/
 
