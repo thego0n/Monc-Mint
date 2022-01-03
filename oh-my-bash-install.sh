@@ -6,7 +6,9 @@ echo "#######################################"
 echo "  Oh-My-bash (Terminal Themes) Setup   "
 echo "#######################################"
 
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+url=https://raw.githubusercontent.com/ohmybash/oh-my-bash/support-unattended-install/tools/install.sh
+bash -c "$(curl -fsSL "$url")" --unattended
+bash -c "$(wget "$url" -O -)" --unattended
 sleep 1s
 rm  /home/$(logname)/.bashrc
 cp  /home/$(logname)/Monc-Mint/.bashrc /home/$(logname)/.bashrc
