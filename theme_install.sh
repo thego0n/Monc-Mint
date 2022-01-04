@@ -12,7 +12,7 @@ git clone https://github.com/vinceliuice/Orchis-theme.git
 
 cd Orchis-theme
 chmod +x install.sh
-./install.sh
+./install.sh -y
 
 echo "Orchis Theme Installed"
 cd ..
