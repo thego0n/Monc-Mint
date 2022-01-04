@@ -17,7 +17,7 @@ Spotify
 Youtube Music"
 
 
-
+clear
 
 echo "######################"
 echo "######################"
