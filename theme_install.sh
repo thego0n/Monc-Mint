@@ -36,4 +36,4 @@ cd ..
 sudo rm -r Orchis-theme/
 sudo rm -r Tela-icon-theme/
 
-sudo ./desktop_setup.sh
+sudo ./finish.sh
