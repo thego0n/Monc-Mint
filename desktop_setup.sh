@@ -2,4 +2,4 @@
 
 sudo dconf load / < desktop_conf.txt
 
-sudo ./oh-my-bash-install.sh
+sudo ./finish.sh
