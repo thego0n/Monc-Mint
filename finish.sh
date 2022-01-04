@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dconf load /org/cinnamon/ < desktop_conf.txt
+
 
 SOFTWARE="Gimp 
 Steam 
