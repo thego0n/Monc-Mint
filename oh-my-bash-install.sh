@@ -10,9 +10,9 @@ url=https://raw.githubusercontent.com/ohmybash/oh-my-bash/support-unattended-ins
 bash -c "$(curl -fsSL "$url")" --unattended
 bash -c "$(wget "$url" -O -)" --unattended
 sleep 1s
-rm  /home/$(logname)/.bashrc
-cp  /home/$(logname)/Monc-Mint/.bashrc /home/$(logname)/.bashrc
+sudo rm  /home/$(logname)/.bashrc
+sudo cp  /home/$(logname)/Monc-Mint/.bashrc /home/$(logname)/.bashrc
 echo "Oh-My-Bash installed!!!"
 sleep 2s
 
-./finish.sh
+sudo ./finish.sh

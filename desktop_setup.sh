@@ -1,5 +1,5 @@
 #!/bin/bash
 
-dconf load / < desktop_conf.txt
+sudo dconf load / < desktop_conf.txt
 
-./oh-my-bash-install.sh
+sudo ./oh-my-bash-install.sh

@@ -38,14 +38,14 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub |  apt-key ad
 sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
 #### Update sources
-apt update -y
-apt upgrade -y
+sudo apt update -y
+sudo apt upgrade -y
 
 echo "Sources Updated"
 sleep 1s
 
 echo "Installing Snap Store and Flatpak"
-apt install snapd flatpak -y
+sudo apt install snapd flatpak -y
 
 echo "Snap Store and Flatpak Installed"
 echo "Commencing install of Packages"
@@ -68,12 +68,12 @@ fonts-powerline
 tlp"
 
 for i in $APT_PKGS; do
-  apt-get install -y $i
+  sudo apt-get install -y $i
 done
 
 APT_DRIVERS="adb"
 for i in $APT_DRIVERS; do
-  apt-get install -y $i
+  sudo apt-get install -y $i
 done
 
 
@@ -82,7 +82,7 @@ done
 SNAP_PKGS="android-studio discord code teams zoom-client spotify youtube-music-desktop-app"
 
 for i in $SNAP_PKGS; do
-    snap install $i --classic
+    sudo snap install $i --classic
 done
 
 # Flatpak Install
@@ -95,8 +95,8 @@ sleep 2s
 echo "All Packages Installed"
 sleep 1s
 
-apt update
-apt upgrade
+sudo apt update
+sudo apt upgrade
 
 #######
 # Desktop Setup
@@ -104,4 +104,4 @@ apt upgrade
 echo "Setting up Desktop Environment"
 chmod +x theme_install.sh
 
-./theme_install.sh
+sudo ./theme_install.sh
