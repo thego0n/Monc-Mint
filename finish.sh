@@ -11,7 +11,8 @@ Thunderbird
 Android Studio 
 Discord 
 VSCode 
-Microsoft Teams 
+Microsoft Teams
+Slack
 Zoom 
 Spotify 
 Youtube Music"
