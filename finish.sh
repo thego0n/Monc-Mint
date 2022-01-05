@@ -1,6 +1,9 @@
 #!/bin/bash
 
-dconf load /org/cinnamon/ < desktop_conf.txt
+dconf load /org/cinnamon/ < cinnamon.dconf
+dconf load /org/nemo/ < nemo.dconf
+dconf load /org/gtk/ < gtk.dconf
+dconf load /org/gnome/ < gnome.dconf
 
 
 SOFTWARE="Gimp 
@@ -38,8 +41,5 @@ echo "To add software to your bottom panel, press the Super (⊞ Win or ⌘ Mac)
 echo "Right click the desired software and select 'Add to Panel'"
 echo 
 echo "Thank you for using my script, if you have and issues or comments, please leave them on my github page"
-echo
-echo "To apply the desktop theme, run this command now"
-echo "'dconf load /org/cinnamon/ < desktop_conf.txt'"
 echo
 echo "You should reboot the system to finalise all changes"
