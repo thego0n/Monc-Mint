@@ -28,13 +28,17 @@ cd ..
 sudo rm -r Orchis-theme/
 sudo rm -r Tela-icon-theme/
 
-
 ######
 # Load theme and desktop settings
 ######
-dconf load /org/cinnamon/ < cinnamon.dconf
-dconf load /org/nemo/ < nemo.dconf
-dconf load /org/gtk/ < gtk.dconf
-dconf load /org/gnome/ < gnome.dconf
+echo "-------------------------------------"
+echo "--        Installing Theme         --"
+echo "-------------------------------------"
+sleep 2s
+
+dconf load /org/cinnamon/ < dconf/cinnamon.dconf
+dconf load /org/nemo/ < dconf/nemo.dconf
+dconf load /org/gtk/ < dconf/gtk.dconf
+dconf load /org/gnome/ < dconf/gnome.dconf
 
 sudo ./finish.sh
