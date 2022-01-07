@@ -1,7 +1,6 @@
 #!/bin/bash
 
-url=https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh
-bash -c "$(wget "$url" -O -)" --unattended
+bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)" --unattended
 sudo cp -f .bashrc ~/.bashrc
 
 sudo ./theme_install.sh
