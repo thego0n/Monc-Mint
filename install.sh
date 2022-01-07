@@ -65,7 +65,9 @@ mariadb-server
 google-chrome-stable 
 thunderbird 
 fonts-powerline
-tlp"
+tlp
+libsass1
+sassc"
 
 for i in $APT_PKGS; do
   sudo apt-get install -y $i
