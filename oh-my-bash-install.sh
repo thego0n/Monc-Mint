@@ -2,5 +2,5 @@
 
 bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)" --unattended
 
-sudo ./oh-my-bash-theme.sh
+./oh-my-bash-theme.sh
 

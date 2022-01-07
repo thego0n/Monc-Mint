@@ -101,4 +101,4 @@ sudo apt update
 sudo apt upgrade
 
 
-sudo ./oh-my-bash-install.sh
+./oh-my-bash-install.sh
