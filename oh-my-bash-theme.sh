@@ -5,5 +5,5 @@ filename=".bashrc"
 
 sed -i "s/font/agnoster/" $filename
 
-cd Monc Mint
+cd Monc-Mint/
 ./theme_install.sh
