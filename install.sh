@@ -78,7 +78,7 @@ for i in $APT_DRIVERS; do
   sudo apt-get install -y $i
 done
 
-
+sudo tlp start
 
 # Snap Install
 SNAP_PKGS="android-studio discord code teams slack zoom-client spotify youtube-music-desktop-app"

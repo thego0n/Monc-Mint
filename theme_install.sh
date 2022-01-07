@@ -13,14 +13,12 @@ git clone https://github.com/vinceliuice/Orchis-theme.git
 cd Orchis-theme
 ./install.sh
 
-echo "Orchis Theme Installed"
 cd ..
 sleep 2s
 
 #####
 # Install Tela Icons
 #####
-echo
 git clone https://github.com/vinceliuice/Tela-icon-theme.git
 cd Tela-icon-theme
 
