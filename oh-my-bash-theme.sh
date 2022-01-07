@@ -1,9 +1,7 @@
 #!/bin/bash
-cd /home/$LOGNAME/
+cd ..
 
-filename=".bashrc"
-
-sed -i "s/font/agnoster/" $filename
+sed -i "s/font/agnoster/" .bashes
 
 cd Monc-Mint/
 ./theme_install.sh
