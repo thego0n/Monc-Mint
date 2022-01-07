@@ -100,10 +100,5 @@ sleep 1s
 sudo apt update
 sudo apt upgrade
 
-url=https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh
-bash -c "$(wget "$url" -O -)" --unattended
-sudo cp -f .bashrc ~/.bashrc
 
-echo "Setting up Desktop Environment"
-
-sudo ./theme_install.sh
+sudo ./oh-my-bash-install.sh
