@@ -25,7 +25,7 @@ echo "######################"
 echo "All finished"
 echo "######################"
 echo "######################"
-echo 
+echo "Please read the following"
 echo 
 echo "The following software has been installed:"
 for i in $SOFTWARE; do
@@ -38,4 +38,16 @@ echo "Right click the desired software and select 'Add to Panel'"
 echo 
 echo "Thank you for using my script, if you have and issues or comments, please leave them on my github page"
 echo
-echo "You should reboot the system to finalise all changes"
+echo "***************"
+echo "IMPORTANT"
+echo "***************"
+echo " If you have reached this section, and the theme has not been applied, please copy and paste the following
+commands the terminal. This mild inconveniance is currently being debugged.
+
+dconf load /org/cinnamon/ < dconf/cinnamon.dconf
+
+dconf load /org/nemo/ < dconf/nemo.dconf
+
+dconf load /org/gtk/ < dconf/gtk.dconf
+
+dconf load /org/gnome/ < dconf/gnome.dconf"
