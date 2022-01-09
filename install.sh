@@ -1,6 +1,12 @@
 #!/bin/bash
 
 clear
+
+if [[ $(/usr/bin/id -u) != "0" ]]; then
+  echo "Please run the script as root!"
+  exit
+fi
+
 echo "-------------------------------------"
 echo "--          Monc-Mint              --"
 echo "-------------------------------------"
