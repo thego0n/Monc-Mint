@@ -87,7 +87,7 @@ done
 sudo tlp start
 
 # Snap Install
-SNAP_PKGS="android-studio discord code teams slack zoom-client spotify youtube-music-desktop-app"
+SNAP_PKGS="android-studio discord code teams slack zoom-client spotify youtube-music-desktop-app marsshooter"
 
 for i in $SNAP_PKGS; do
     sudo snap install $i --classic
