@@ -69,7 +69,8 @@ filezilla
 default-jdk 
 mariadb-server 
 google-chrome-stable 
-thunderbird 
+thunderbird
+vlc 
 fonts-powerline
 tlp
 libsass1
@@ -87,7 +88,7 @@ done
 sudo tlp start
 
 # Snap Install
-SNAP_PKGS="android-studio discord code teams slack zoom-client spotify youtube-music-desktop-app marsshooter"
+SNAP_PKGS="android-studio intellij-idea-community discord code teams slack zoom-client gitkraken spotify youtube-music-desktop-app marsshooter"
 
 for i in $SNAP_PKGS; do
     sudo snap install $i --classic

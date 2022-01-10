@@ -6,11 +6,14 @@ Steam
 Filezilla 
 Openjdk 
 MariaDB 
+VLC
+GitKraken
 Google Chrome 
 Thunderbird 
-Android Studio 
-Discord 
+Android Studio
+IntelliJ
 VSCode 
+Discord 
 Microsoft Teams
 Slack
 Zoom 
@@ -32,7 +35,8 @@ for i in $SOFTWARE; do
   echo $i
   echo "____________"
 done
-
+echo "Please visit https://snapcraft.io/ to download more software that you may require"
+echo
 echo "To add software to your bottom panel, press the Super (⊞ Win or ⌘ Mac) key, search for the software you want"
 echo "Right click the desired software and select 'Add to Panel'"
 echo 
