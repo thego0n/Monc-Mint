@@ -17,8 +17,7 @@ Discord
 Microsoft Teams
 Slack
 Zoom 
-Spotify 
-Youtube Music"
+Spotify"
 
 
 clear
