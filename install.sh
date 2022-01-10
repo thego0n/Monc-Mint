@@ -39,10 +39,6 @@ echo "-------------------------------------"
 ### Activate snap store
 rm /etc/apt/preferences.d/nosnap.pref &> /dev/null
 
-#### Add google chrome repo
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub |  apt-key add - &> /dev/null
-sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-
 #### Update sources
 sudo apt update -y
 sudo apt upgrade -y
@@ -62,13 +58,18 @@ sleep 2s
 # Install
 ###########
 
+# Chrome Install
+wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+apt install -f -y
+
 # Apt Install
 APT_PKGS="gimp 
 steam 
 filezilla 
 default-jdk 
 mariadb-server 
-google-chrome-stable 
 thunderbird
 vlc 
 fonts-powerline
@@ -94,7 +95,7 @@ for i in $SNAP_PKGS; do
     sudo snap install $i --classic
 done
 
-# Flatpak Install
+# Flatpak Setup
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &> /dev/null
 
 
@@ -104,8 +105,8 @@ sleep 2s
 echo "All Packages Installed"
 sleep 1s
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
 
 
