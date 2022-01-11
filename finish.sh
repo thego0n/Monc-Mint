@@ -45,12 +45,7 @@ echo "***************"
 echo "IMPORTANT"
 echo "***************"
 echo " If you have reached this section, and the theme has not been applied, please copy and paste the following
-commands into this terminal. This mild inconveniance is currently being debugged.
+command into this terminal. This mild inconveniance is currently being debugged.
 
-dconf load /org/cinnamon/ < dconf/cinnamon.dconf
-
-dconf load /org/nemo/ < dconf/nemo.dconf
-
-dconf load /org/gtk/ < dconf/gtk.dconf
-
-dconf load /org/gnome/ < dconf/gnome.dconf"
+dconf load / < dconf/windows.dconf
+"
