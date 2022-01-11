@@ -45,7 +45,7 @@ echo "***************"
 echo "IMPORTANT"
 echo "***************"
 echo " If you have reached this section, and the theme has not been applied, please copy and paste the following
-commands the terminal. This mild inconveniance is currently being debugged.
+commands into this terminal. This mild inconveniance is currently being debugged.
 
 dconf load /org/cinnamon/ < dconf/cinnamon.dconf
 

@@ -159,20 +159,19 @@ sudo rm -r Tela-icon-theme/
 echo "-------------------------------------"
 echo "--        Installing Theme         --"
 echo "-------------------------------------"
-echo "Please allow 30 seconds for the desktop theme to apply"
 sleep 2s
 
 echo "Loading Cinnamon Settings"
 dconf load /org/cinnamon/ < dconf/cinnamon.dconf
-sleep 3s
+sleep 1s
 
 echo "Loading File Explorer Settings"
 dconf load /org/nemo/ < dconf/nemo.dconf
-sleep 3s
+sleep 1s
 
 echo "Loading GTK Settings"
 dconf load /org/gtk/ < dconf/gtk.dconf
-sleep 3s
+sleep 1s
 
 echo "Loading Terminal Settings"
 dconf load /org/gnome/ < dconf/gnome.dconf
