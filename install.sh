@@ -162,18 +162,5 @@ echo "-------------------------------------"
 sleep 2s
 
 echo "Loading Cinnamon Settings"
-dconf load /org/cinnamon/ < dconf/cinnamon.dconf
-sleep 1s
-
-echo "Loading File Explorer Settings"
-dconf load /org/nemo/ < dconf/nemo.dconf
-sleep 1s
-
-echo "Loading GTK Settings"
-dconf load /org/gtk/ < dconf/gtk.dconf
-sleep 1s
-
-echo "Loading Terminal Settings"
-dconf load /org/gnome/ < dconf/gnome.dconf
-
+dconf load / < dconf/windows.dconf
 sudo ./finish.sh
