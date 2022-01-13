@@ -1,6 +1,6 @@
 # Monc-Mint
 
-Monc-Mint is a bash script intended to be run directly after a fresh install of Linux Mint. It installs all commonly used software and drivers for programmers and developers.
+Monc-Mint is a bash script intended to be run directly after a fresh install of Linux Mint. It installs commonly used software and drivers for programmers and developers.
 
 This project is still in development and testing. While every care is being taken to test this script regularly, please use this at your own risk.
 
