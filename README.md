@@ -39,7 +39,11 @@ The script will begin by asking for your name and email address. This is just fo
 
 This script requires an active internet connection.
 
-\*\* If the theme is not applied upon finishing the script, it can be applied by running this command '''`dconf load / < dconf/windows.dconf`''' in the 'Monc-Mint' directory
+\*\* If the theme is not applied upon finishing the script, it can be applied by running this command 
+```bash 
+dconf load / < dconf/windows.dconf
+````
+in the 'Monc-Mint' directoryS
 
 ## Planned Features
 
