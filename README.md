@@ -43,7 +43,7 @@ This script requires an active internet connection.
 ```bash 
 dconf load / < dconf/windows.dconf
 ```
-in the 'Monc-Mint' directoryS
+in the 'Monc-Mint' directory
 
 ## Planned Features
 
