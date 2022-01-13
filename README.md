@@ -10,9 +10,10 @@ Obtain an ISO from [Linuxmint.com](https://linuxmint.com/download.php), install 
 
 Follow the Mint installation process as normal.
 
-1. Install git on the fresh system using
+1. Update apt sources and install git on the fresh system using
 
 ```bash
+sudo apt update
 sudo apt install git -y
 ```
 
@@ -38,7 +39,11 @@ The script will begin by asking for your name and email address. This is just fo
 
 This script requires an active internet connection.
 
-\*\* If the theme is not applied upon finishing the script, it can be applied by running this command '''`dconf load / < dconf/windows.dconf`''' in the 'Monc-Mint' directory
+\*\* If the theme is not applied upon finishing the script, it can be applied by running this command 
+```bash 
+dconf load / < dconf/windows.dconf
+````
+in the 'Monc-Mint' directoryS
 
 ## Planned Features
 
