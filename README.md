@@ -10,9 +10,10 @@ Obtain an ISO from [Linuxmint.com](https://linuxmint.com/download.php), install 
 
 Follow the Mint installation process as normal.
 
-1. Install git on the fresh system using
+1. Update apt sources and install git on the fresh system using
 
 ```bash
+sudo apt update
 sudo apt install git -y
 ```
 
