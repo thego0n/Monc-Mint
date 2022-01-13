@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+# Monc-Mint
 
-You can use the [editor on GitHub](https://github.com/monc949/Monc-Mint/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Monc-Mint is a bash script intended to be run directly after a fresh install of Linux Mint. It installs commonly used software and drivers for programmers and developers.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This project is still in development and testing. While every care is being taken to test this script regularly, please use this at your own risk.
 
-### Markdown
+## Installation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Obtain an ISO from [Linuxmint.com](https://linuxmint.com/download.php), install it on a usb with [balenaEtcher](https://www.balena.io/etcher/) or [UNetbootin](https://unetbootin.github.io/) or install it on a [Ventoy](https://www.ventoy.net/en/doc_start.html) based USB.
 
-```markdown
-Syntax highlighted code block
+Follow the Mint installation process as normal.
 
-# Header 1
-## Header 2
-### Header 3
+1. Update apt sources and install git on the fresh system using
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+sudo apt update
+sudo apt install git -y
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+2. Clone the project using
 
-### Jekyll Themes
+```bash
+git clone https://github.com/monc949/Monc-Mint.git
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/monc949/Monc-Mint/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+3. Then navigate into the Monc-Mint directory.
+   And run the install file as sudo. **\*\*** This is very important
 
-### Support or Contact
+```bash
+cd Monc-Mint
+sudo ./install.sh
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Install.sh
+
+The script will begin by asking for your name and email address. This is just for configuring your git username and email.
+
+## Note
+
+This script requires an active internet connection.
+
+\*\* If the theme is not applied upon finishing the script, it can be applied by running this command 
+```bash 
+dconf load / < dconf/windows.dconf
+```
+in the 'Monc-Mint' directory
+
+## Planned Features
+
+- Choice of Mac/Windows style layout
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
