@@ -13,6 +13,7 @@ Thunderbird
 Android Studio
 IntelliJ
 VSCode 
+Sublime Text
 Discord 
 Microsoft Teams
 Slack
