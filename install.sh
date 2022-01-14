@@ -70,6 +70,7 @@ steam
 filezilla 
 default-jdk 
 mariadb-server 
+sublime-text
 thunderbird
 vlc 
 fonts-powerline
