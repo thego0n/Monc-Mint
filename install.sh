@@ -157,11 +157,11 @@ sudo rm -r Tela-icon-theme/
 ######
 # Load theme and desktop settings
 ######
+clear
 echo "-------------------------------------"
 echo "--        Installing Theme         --"
 echo "-------------------------------------"
 sleep 2s
 
-echo "Loading Cinnamon Settings"
-dconf load / < dconf/windows.dconf
+gnome-terminal -x ./theme.sh
 sudo ./finish.sh
