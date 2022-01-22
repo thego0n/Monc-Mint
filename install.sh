@@ -76,6 +76,7 @@ vlc
 fonts-powerline
 tlp
 libsass1
+php
 sassc"
 
 for i in $APT_PKGS; do
